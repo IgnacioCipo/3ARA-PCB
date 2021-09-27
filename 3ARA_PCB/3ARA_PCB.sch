@@ -625,7 +625,7 @@ F 3 "~" H 9875 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 9875 1200 1    50   ~ 0
-PE0
+PC1
 Wire Wire Line
 	9875 1750 9875 1925
 Text Notes 6775 850  0    118  Italic 0
@@ -1052,14 +1052,8 @@ Wire Wire Line
 	2850 7750 3425 7750
 Wire Wire Line
 	2850 7850 3425 7850
-Text Label 9100 1625 0    50   ~ 0
-PD15
 Wire Wire Line
 	8850 1625 9100 1625
-Text Label 2850 8050 0    50   ~ 0
-PD15
-Wire Wire Line
-	2850 8050 3425 8050
 Text Label 5725 3250 0    50   ~ 0
 MOTOR_1(PWM)
 Text Label 5725 3150 0    50   ~ 0
@@ -1863,22 +1857,10 @@ F 3 "~" H 13575 4300 50  0001 C CNN
 $EndComp
 Text Label 2875 5550 0    50   ~ 0
 PE7
-Text Label 2875 5850 0    50   ~ 0
-PE10
-Wire Wire Line
-	2875 5850 3425 5850
 Wire Wire Line
 	2875 5550 3425 5550
-Text Label 2875 5950 0    50   ~ 0
-PE11
-Wire Wire Line
-	3425 5950 2875 5950
-Text Label 13100 4100 0    50   ~ 0
-PE7
-Text Label 13100 4200 0    50   ~ 0
-PE10
-Text Label 13100 4300 0    50   ~ 0
-PE11
+Text Label 14175 4100 0    50   ~ 0
+PB15
 Text Label 5725 6050 0    50   ~ 0
 PB12
 Text Label 5725 6150 0    50   ~ 0
@@ -1891,11 +1873,11 @@ Wire Wire Line
 	5725 6150 5225 6150
 Wire Wire Line
 	5225 6250 5725 6250
-Text Label 13100 4400 0    50   ~ 0
+Text Label 12950 4400 0    50   ~ 0
 PB12
-Text Label 13100 4500 0    50   ~ 0
+Text Label 14175 4500 0    50   ~ 0
 PB13
-Text Label 14075 4200 0    50   ~ 0
+Text Label 14175 4300 0    50   ~ 0
 PB14
 $Comp
 L pspice:INDUCTOR L2
@@ -2053,45 +2035,25 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0103
 U 1 1 614D4ACB
-P 14075 4575
-F 0 "#PWR0103" H 14075 4325 50  0001 C CNN
-F 1 "GND" H 14080 4402 50  0000 C CNN
-F 2 "" H 14075 4575 50  0001 C CNN
-F 3 "" H 14075 4575 50  0001 C CNN
-	1    14075 4575
+P 14575 4650
+F 0 "#PWR0103" H 14575 4400 50  0001 C CNN
+F 1 "GND" H 14580 4477 50  0000 C CNN
+F 2 "" H 14575 4650 50  0001 C CNN
+F 3 "" H 14575 4650 50  0001 C CNN
+	1    14575 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 614D4DF5
-P 14075 4000
-F 0 "#PWR0104" H 14075 3850 50  0001 C CNN
-F 1 "+3.3V" H 14090 4173 50  0000 C CNN
-F 2 "" H 14075 4000 50  0001 C CNN
-F 3 "" H 14075 4000 50  0001 C CNN
-	1    14075 4000
+P 12950 4025
+F 0 "#PWR0104" H 12950 3875 50  0001 C CNN
+F 1 "+3.3V" H 12965 4198 50  0000 C CNN
+F 2 "" H 12950 4025 50  0001 C CNN
+F 3 "" H 12950 4025 50  0001 C CNN
+	1    12950 4025
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13875 4100 14075 4100
-Wire Wire Line
-	14075 4100 14075 4000
-Wire Wire Line
-	13875 4500 14075 4500
-Wire Wire Line
-	14075 4500 14075 4575
-Wire Wire Line
-	13100 4500 13375 4500
-Wire Wire Line
-	13100 4400 13375 4400
-Wire Wire Line
-	13100 4300 13375 4300
-Wire Wire Line
-	13100 4200 13375 4200
-Wire Wire Line
-	13100 4100 13375 4100
-Wire Wire Line
-	13875 4200 14075 4200
 $Comp
 L Device:LED D6
 U 1 1 615579A0
@@ -2134,4 +2096,67 @@ Wire Wire Line
 	5225 3750 5725 3750
 Wire Wire Line
 	5225 3850 5725 3850
+Text Label 2875 5650 0    50   ~ 0
+PE8
+Wire Wire Line
+	2875 5650 3425 5650
+Text Label 9100 1625 0    50   ~ 0
+PE8
+Text Label 5725 6650 0    50   ~ 0
+PC1
+Wire Wire Line
+	5225 6650 5725 6650
+Wire Wire Line
+	12950 4025 12950 4200
+Wire Wire Line
+	12950 4200 13375 4200
+Text Label 5725 4350 0    50   ~ 0
+PA12
+Text Label 5725 4250 0    50   ~ 0
+PA11
+Text Label 5725 4150 0    50   ~ 0
+PA10
+Wire Wire Line
+	5225 4150 5725 4150
+Wire Wire Line
+	5725 4250 5225 4250
+Wire Wire Line
+	5225 4350 5725 4350
+Wire Wire Line
+	13875 4200 14575 4200
+Wire Wire Line
+	14575 4200 14575 4650
+Text Label 12950 4300 0    50   ~ 0
+PA12
+Wire Wire Line
+	13875 4400 14175 4400
+Text Label 12950 4500 0    50   ~ 0
+PA11
+Wire Wire Line
+	12950 4300 13375 4300
+Text Label 14175 4400 0    50   ~ 0
+PA10
+Wire Wire Line
+	12950 4500 13375 4500
+Wire Wire Line
+	13875 4100 14175 4100
+Wire Wire Line
+	14175 4300 13875 4300
+Wire Wire Line
+	12950 4400 13375 4400
+Wire Wire Line
+	14175 4500 13875 4500
+Text Label 5725 6350 0    50   ~ 0
+PB15
+Wire Wire Line
+	5225 6350 5725 6350
+Wire Wire Line
+	13375 4100 13225 4100
+Wire Wire Line
+	13225 4100 13225 3750
+Wire Wire Line
+	13225 3750 14575 3750
+Wire Wire Line
+	14575 3750 14575 4200
+Connection ~ 14575 4200
 $EndSCHEMATC
